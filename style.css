@@ -180,6 +180,58 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
 }
 
+/* ======== Pain Points ======== */
+.pain-section {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.pain-lead {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-light);
+  letter-spacing: 0.1em;
+  margin-bottom: 48px;
+}
+
+.pain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 56px;
+}
+
+.pain-item {
+  padding: 0;
+}
+
+.pain-quote {
+  font-size: 22px;
+  font-weight: 300;
+  color: var(--white);
+  letter-spacing: 0.08em;
+  line-height: 1.8;
+}
+
+.pain-body {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-light);
+  line-height: 2.6;
+  margin-bottom: 40px;
+}
+
+.pain-conclusion {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--white);
+  letter-spacing: 0.1em;
+  line-height: 2;
+  border-top: 1px solid var(--border);
+  padding-top: 40px;
+}
+
 /* ======== Product ======== */
 .product-hero {
   display: flex;
@@ -510,6 +562,9 @@ a { color: inherit; text-decoration: none; }
 
   .section { padding: 64px 0; }
   .section-label { margin-bottom: 40px; }
+
+  .pain-quote { font-size: 18px; }
+  .pain-body { line-height: 2.4; }
 
   .product-hero {
     flex-direction: column-reverse;
