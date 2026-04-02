@@ -64,7 +64,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .logo-img {
-  height: 18px;
+  height: 32px;
   width: auto;
   display: block;
 }
@@ -150,7 +150,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .intro-content {
-  max-width: 640px;
+  max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
