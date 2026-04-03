@@ -5,12 +5,16 @@ window.addEventListener('scroll', function() {
 
 // モバイルナビ
 document.getElementById('nav-toggle').addEventListener('click', function() {
-  document.getElementById('nav').classList.toggle('active');
+  var nav = document.getElementById('nav');
+  var header = document.querySelector('.header');
+  nav.classList.toggle('active');
+  header.classList.toggle('nav-open');
 });
 
 document.querySelectorAll('#nav a').forEach(function(link) {
   link.addEventListener('click', function() {
     document.getElementById('nav').classList.remove('active');
+    document.querySelector('.header').classList.remove('nav-open');
   });
 });
 
