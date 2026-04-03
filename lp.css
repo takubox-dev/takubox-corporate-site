@@ -1229,6 +1229,21 @@ section {
   margin-bottom: 4px;
 }
 
+.lp-footer-legal {
+  font-size: 12px;
+  opacity: 0.5;
+  margin-bottom: 8px;
+}
+
+.lp-footer-legal a {
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.lp-footer-legal a:hover {
+  opacity: 0.7;
+}
+
 .lp-footer-copy {
   font-size: 11px;
   opacity: 0.3;
