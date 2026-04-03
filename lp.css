@@ -555,9 +555,9 @@ section {
   color: var(--text-dark);
 }
 
-.check { color: var(--primary); font-weight: 700; font-size: 18px; }
-.cross { color: #CCC; font-size: 18px; }
-.triangle { color: var(--text-muted); font-size: 18px; }
+.check { color: var(--primary); font-weight: 700; font-size: 28px; -webkit-text-stroke: 2px var(--primary); }
+.cross { color: #CCC; font-size: 20px; }
+.triangle { color: var(--text-muted); font-size: 20px; }
 
 .comparison-note {
   text-align: center;
@@ -759,6 +759,10 @@ section {
   padding: 64px 0;
 }
 
+.pricing > .container {
+  max-width: 960px;
+}
+
 .pricing-device {
   text-align: center;
   font-size: 16px;
@@ -821,6 +825,59 @@ section {
 
 .pricing-card--recommended .pricing-card-header {
   background: #EBF5FF;
+}
+
+.pricing-merits {
+  margin-bottom: 32px;
+}
+
+.pricing-merits-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.pricing-merits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.pricing-merit {
+  background: var(--bg-white);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.pricing-merit-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.pricing-merit p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-body);
+  margin: 0;
+}
+
+.pricing-merit strong {
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 767px) {
+  .pricing-merits-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .pricing-retention {
@@ -1316,6 +1373,10 @@ section {
 
   .pricing-cards--3col {
     gap: 16px;
+  }
+
+  .pricing-cards--4col {
+    gap: 14px;
   }
 
   .pricing-card {
