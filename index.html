@@ -67,7 +67,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -96,6 +96,10 @@
     <a href="product.html" class="hero-link">
       <div class="hero-bg">
         <img src="images/hero.png" alt="TAKUBOX" class="hero-img">
+        <div class="hero-handwrite">
+          <p class="handwrite-line handwrite-line--sub" data-handwrite>スマホ管理と勉強を「託す」ボックス</p>
+          <p class="handwrite-line handwrite-line--main" data-handwrite>タクボックス</p>
+        </div>
       </div>
       <div class="hero-caption">
         <p class="hero-title">「スマホやめなさい」を、<br>もう言わなくていい。</p>
@@ -134,7 +138,7 @@
         <div class="product-text">
           <h3 class="product-name">TAKUBOX</h3>
           <p class="product-desc">課題が終わると、スマートフォンが自動で使えるようになる。親が声をかけなくても、こども自身が動き出す。TAKUBOXは、スマートフォンを物理的に預かることで「勉強しなさい」のない毎日をつくるスマートデバイスです。</p>
-          <a href="lp.html" class="product-link">詳しく見る &rarr;</a>
+          <a href="product.html" class="product-link">詳しく見る &rarr;</a>
         </div>
         <div class="product-image">
           <img src="images/product-sunset.png" alt="TAKUBOX">
@@ -210,11 +214,6 @@
           <time class="topic-date">2024.03.20</time>
           <span class="topic-tag">開発</span>
           <span class="topic-text">タクボックス製品版の開発開始</span>
-        </li>
-        <li class="topic-item">
-          <time class="topic-date">2023.12.11</time>
-          <span class="topic-tag">お知らせ</span>
-          <span class="topic-text">プライバシーポリシーを変更しました</span>
         </li>
         <li class="topic-item">
           <time class="topic-date">2023.09.10</time>
@@ -297,7 +296,7 @@
         <div class="footer-col">
           <h4>Product</h4>
           <ul>
-            <li><a href="lp.html">TAKUBOX</a></li>
+            <li><a href="product.html">TAKUBOX</a></li>
             <li><a href="https://apps.apple.com/app/id6472884615" target="_blank" rel="noopener">iOS App</a></li>
             <li><a href="https://play.google.com/store/apps/details?id=net.takubox" target="_blank" rel="noopener">Android App</a></li>
           </ul>
@@ -317,6 +316,11 @@
       </div>
     </div>
   </footer>
+
+  <!-- Fixed CTA -->
+  <div class="site-fixed-cta" id="siteFixedCta">
+    <a href="lp.html#apply" class="site-fixed-cta-link">91,300円 → 0円 ── まずは無料で試してみる</a>
+  </div>
 
   <script src="script.js"></script>
 </body>

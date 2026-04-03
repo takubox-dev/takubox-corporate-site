@@ -516,21 +516,18 @@ section {
 }
 
 .comparison-table-wrap {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   margin-bottom: 24px;
 }
 
 .comparison-table {
   width: 100%;
-  min-width: 480px;
   border-collapse: collapse;
   font-size: 14px;
 }
 
 .comparison-table th,
 .comparison-table td {
-  padding: 14px 12px;
+  padding: 12px 8px;
   text-align: center;
   border-bottom: 1px solid var(--border);
 }
@@ -556,7 +553,6 @@ section {
   text-align: left !important;
   font-weight: 500;
   color: var(--text-dark);
-  white-space: nowrap;
 }
 
 .check { color: var(--primary); font-weight: 700; font-size: 18px; }
@@ -1337,9 +1333,34 @@ section {
   }
 }
 
-/* ======== SP bottom padding for fixed bar ======== */
+/* ======== SP adjustments ======== */
 @media (max-width: 767px) {
   .lp-footer {
     padding-bottom: 100px;
+  }
+
+  .comparison-table {
+    font-size: 12px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 10px 4px;
+  }
+
+  .comparison-table thead th {
+    font-size: 11px;
+  }
+
+  .comparison-table thead .highlight-col {
+    font-size: 12px;
+  }
+
+  .row-label {
+    font-size: 11px;
+  }
+
+  .check, .cross, .triangle {
+    font-size: 16px;
   }
 }
