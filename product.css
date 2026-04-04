@@ -57,14 +57,14 @@ a { color: inherit; text-decoration: none; }
   max-width: 960px;
   margin: 0 auto;
   padding: 0 40px;
-  height: 64px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo-img {
-  height: 32px;
+  height: 64px;
   width: auto;
   display: block;
 }
@@ -75,7 +75,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .nav a {
-  font-size: 11px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 1.5px;
   color: var(--text-light);
@@ -103,7 +103,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ======== Hero ======== */
 .hero {
-  margin-top: 64px;
+  margin-top: 80px;
   background: var(--bg);
 }
 
@@ -335,7 +335,7 @@ a { color: inherit; text-decoration: none; }
 
 .spec-cta {
   text-align: center;
-  margin-top: 64px;
+  margin-top: 80px;
 }
 
 .btn {
@@ -646,7 +646,7 @@ a { color: inherit; text-decoration: none; }
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.88);
+  background: #000;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid rgba(255, 255, 255, 0.08);

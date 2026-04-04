@@ -56,33 +56,27 @@ a { color: inherit; text-decoration: none; }
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 40px;
-  height: 64px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
   display: block;
   filter: invert(1);
 }
 
 .nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 64px;
   display: flex;
   align-items: center;
   gap: 36px;
-  z-index: 1001;
-  padding-right: 40px;
 }
 
 .nav a {
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: 1.5px;
   color: var(--text-muted);
@@ -111,7 +105,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ======== Hero ======== */
 .hero {
-  margin-top: 64px;
+  margin-top: 80px;
   position: relative;
   background: var(--dark);
   overflow: hidden;
@@ -152,9 +146,9 @@ a { color: inherit; text-decoration: none; }
 
 .hero-handwrite {
   position: absolute;
-  bottom: 24px;
+  top: 20%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
   pointer-events: none;
@@ -174,13 +168,13 @@ a { color: inherit; text-decoration: none; }
 }
 
 .handwrite-line--sub {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .handwrite-line--main {
-  font-size: 52px;
+  font-size: 80px;
   font-weight: 700;
   letter-spacing: 0.15em;
 }
@@ -646,8 +640,6 @@ a { color: inherit; text-decoration: none; }
     display: none;
     position: fixed;
     top: 56px; left: 0; right: 0; bottom: 0;
-    height: auto;
-    padding-right: 0;
     background: rgba(255, 255, 255, 0.55);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
@@ -686,7 +678,7 @@ a { color: inherit; text-decoration: none; }
   .hero-caption { padding: 24px 24px 48px; }
 
   .hero-handwrite {
-    bottom: -4px;
+    top: 22%;
   }
 
   .handwrite-line {
@@ -764,10 +756,8 @@ a { color: inherit; text-decoration: none; }
   left: 0;
   right: 0;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.92);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  background: #000;
+  border-top: none;
   padding: 12px 24px;
   padding-bottom: calc(12px + env(safe-area-inset-bottom));
   transform: translateY(100%);
@@ -784,9 +774,9 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   text-align: center;
   padding: 12px 32px;
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 2px;
-  color: #333;
+  color: #fff;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.5px;
@@ -794,6 +784,6 @@ a { color: inherit; text-decoration: none; }
 }
 
 .site-fixed-cta-link:hover {
-  background: rgba(0, 0, 0, 0.03);
-  border-color: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.4);
 }
