@@ -28,6 +28,54 @@
   --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
+/* ======== LP Header ======== */
+.lp-header {
+  background: #000;
+  padding: 16px 0;
+}
+
+.lp-header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lp-header-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+  filter: invert(1);
+}
+
+.lp-header-back {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.lp-header-back:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .lp-header-inner {
+    padding: 0 24px;
+  }
+
+  .lp-header-logo img {
+    height: 36px;
+  }
+
+  .lp-header-back {
+    font-size: 12px;
+  }
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
