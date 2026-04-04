@@ -490,6 +490,15 @@ a { color: inherit; text-decoration: none; }
   flex: 1;
 }
 
+a.topic-link {
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+a.topic-link:hover {
+  opacity: 0.6;
+}
+
 /* ======== Company ======== */
 .company-table-wrapper {
   max-width: 640px;
