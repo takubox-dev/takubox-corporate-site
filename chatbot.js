@@ -50,10 +50,23 @@
   btn.onclick = function() { box.classList.toggle('open'); if(box.classList.contains('open')) input.focus(); };
   box.querySelector('.cb-close').onclick = function() { box.classList.remove('open'); };
 
+  function formatReply(text) {
+    return text
+      .replace(/\*\*(.*?)\*\*/g, '$1')
+      .replace(/\*(.*?)\*/g, '$1')
+      .replace(/^- /gm, '・')
+      .replace(/^#{1,3} /gm, '')
+      .replace(/\n{3,}/g, '\n\n');
+  }
+
   function addMsg(text, cls) {
     var d = document.createElement('div');
     d.className = 'cb-msg ' + cls;
-    d.textContent = text;
+    if (cls.includes('bot') && !cls.includes('loading')) {
+      d.innerText = formatReply(text);
+    } else {
+      d.textContent = text;
+    }
     msgs.appendChild(d);
     msgs.scrollTop = msgs.scrollHeight;
     return d;
