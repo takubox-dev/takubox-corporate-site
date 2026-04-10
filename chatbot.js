@@ -1,5 +1,6 @@
 (function() {
   var API_URL = 'https://inpt2ko4lb.execute-api.ap-northeast-1.amazonaws.com/chat';
+  var sessionId = 'web_' + Date.now() + '_' + Math.random().toString(36).slice(2);
 
   // スタイル
   var style = document.createElement('style');
@@ -84,10 +85,11 @@
       var res = await fetch(API_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: msg })
+        body: JSON.stringify({ message: msg, sessionId: sessionId, pageUrl: window.location.href })
       });
       var data = await res.json();
       msgs.removeChild(loading);
+      if (data.sessionId) sessionId = data.sessionId;
       addMsg(data.reply || data.error || 'エラーが発生しました', 'bot');
     } catch(e) {
       msgs.removeChild(loading);
