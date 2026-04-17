@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://takubox.co.jp/</loc>
-    <lastmod>2026-04-15</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,6 +61,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://takubox.co.jp/blog/youtube-addiction-children.html</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://takubox.co.jp/blog/smartphone-lockbox-physical.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
@@ -98,7 +104,7 @@
   </url>
   <url>
     <loc>https://takubox.co.jp/blog/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
