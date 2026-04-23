@@ -268,6 +268,80 @@ a:hover { opacity: 0.7; }
   opacity: 1;
 }
 
+/* Subscribe Box (記事末尾の購読導線) */
+.subscribe-box {
+  margin: 56px 0 20px;
+  padding: 28px 20px;
+  background: #f8f6f2;
+  border-radius: 16px;
+  text-align: center;
+}
+.subscribe-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin: 0 0 16px;
+  letter-spacing: 0.5px;
+}
+.subscribe-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.subscribe-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  color: #fff !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+.subscribe-btn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0,0,0,0.12); opacity: 1; }
+.subscribe-line { background: #06C755; }
+.subscribe-insta { background: linear-gradient(45deg, #F58529 0%, #DD2A7B 50%, #8134AF 100%); }
+@media (max-width: 640px) {
+  .subscribe-btn { font-size: 13px; padding: 11px 18px; }
+  .subscribe-box { padding: 24px 14px; }
+}
+
+/* CTA Box (記事末尾の誘導ボタン) */
+.cta-box {
+  margin: 56px 0 32px;
+  padding: 36px 24px;
+  background: #FFF5E6;
+  border: 2px solid #F5A623;
+  border-radius: 20px;
+  text-align: center;
+}
+.cta-btn-primary {
+  display: inline-block;
+  padding: 20px 32px;
+  background: #F5A623;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(245,166,35,0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  line-height: 1.6;
+  max-width: 94%;
+}
+.cta-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(245,166,35,0.42);
+  background: #E8971D;
+  opacity: 1;
+}
+@media (max-width: 640px) {
+  .cta-btn-primary { font-size: 15px; padding: 18px 24px; }
+  .cta-box { padding: 28px 16px; }
+}
+
 /* Related */
 .article-related {
   margin-top: 56px;
