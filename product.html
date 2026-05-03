@@ -190,6 +190,11 @@ a { color: inherit; text-decoration: none; }
   animation: fadeIn 1s ease forwards;
 }
 
+picture { display: block; }
+.hero-img { aspect-ratio: 1376 / 768; }
+.feature-image picture { aspect-ratio: 1344 / 768; }
+.product-image picture { aspect-ratio: 1376 / 768; }
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -757,9 +762,9 @@ a { color: inherit; text-decoration: none; }
 </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap">
-  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=optional">
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=optional">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=optional"></noscript>
   <!-- Yahoo広告リターゲティング -->
   <script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
   <script>
@@ -774,7 +779,7 @@ a { color: inherit; text-decoration: none; }
   <header class="header" id="top">
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="TAKUBOX" class="logo-img">
+        <img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="logo-img">
       </a>
       <nav class="nav" id="nav">
         <a href="#features">特徴</a>
@@ -979,7 +984,7 @@ a { color: inherit; text-decoration: none; }
         </div>
       </div>
       <div class="footer-bottom">
-        <img src="images/logo.png" alt="TAKUBOX" class="footer-logo-img">
+        <img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="footer-logo-img">
         <p>&copy; 2026 TAKUBOX LLC. All Rights Reserved.</p>
       </div>
     </div>
