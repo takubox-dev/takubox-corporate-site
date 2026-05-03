@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>【LINE会員限定】開発中の苦難 — TAKUBOX創業の舞台裏 | TAKUBOX（タクボックス）</title>
+  <meta name="description" content="LINE会員限定コラム。コーポレートサイトでは語れないTAKUBOX開発の3年間の経緯を記録します。">
+
+  <link rel="icon" href="/images/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/images/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="blog.css">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-718109322"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SVFZRNFQZE');
+    gtag('config', 'AW-718109322');
+  </script>
+
+  <style>
+    .members-only-wrap { max-width: 720px; margin: 60px auto; padding: 0 24px; }
+    .members-only-badge {
+      display: inline-block; background: #F5A623; color: #fff;
+      padding: 4px 12px; border-radius: 4px; font-size: 13px; font-weight: 700;
+      letter-spacing: 0.05em; margin-bottom: 16px;
+    }
+    .members-only-title {
+      font-size: 28px; line-height: 1.5; font-weight: 700; margin-bottom: 24px; color: #3D3D3D;
+    }
+    .members-only-lead {
+      font-size: 15px; line-height: 1.9; color: #555; margin-bottom: 40px;
+      padding: 20px 24px; background: #FFF5E6; border-left: 3px solid #F5A623; border-radius: 4px;
+    }
+    .pw-form {
+      background: #fff; border: 1px solid #e5e5e5; border-radius: 8px;
+      padding: 32px 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .pw-form-title { font-size: 16px; font-weight: 700; margin-bottom: 12px; color: #3D3D3D; }
+    .pw-form-note { font-size: 13px; color: #888; margin-bottom: 20px; }
+    .pw-input {
+      width: 100%; padding: 12px 14px; font-size: 16px; border: 1px solid #ccc;
+      border-radius: 4px; box-sizing: border-box; font-family: inherit;
+    }
+    .pw-input:focus { outline: none; border-color: #4A90D9; }
+    .pw-submit {
+      display: block; width: 100%; padding: 12px; margin-top: 16px;
+      background: #4A90D9; color: #fff; border: none; border-radius: 4px;
+      font-size: 15px; font-weight: 700; cursor: pointer; font-family: inherit;
+    }
+    .pw-submit:hover { opacity: 0.9; }
+    .pw-error {
+      color: #c0392b; font-size: 13px; margin-top: 12px; min-height: 20px;
+    }
+    .members-content { display: none; }
+    .construction-box {
+      background: #fff; border: 2px dashed #F5A623; border-radius: 8px;
+      padding: 60px 32px; text-align: center; margin: 40px 0;
+    }
+    .construction-icon { font-size: 48px; margin-bottom: 16px; }
+    .construction-title { font-size: 22px; font-weight: 700; color: #3D3D3D; margin-bottom: 16px; }
+    .construction-text { font-size: 15px; line-height: 1.9; color: #555; }
+  </style>
+</head>
+<body>
+
+  <header class="blog-header">
+    <div class="blog-header-inner">
+      <a href="../index.html" class="blog-header-logo">
+        <img src="../images/logo.png" alt="TAKUBOX">
+      </a>
+      <nav class="blog-header-nav">
+        <a href="../product.html">製品紹介</a>
+        <a href="../lp.html">先行予約</a>
+      </nav>
+    </div>
+  </header>
+
+  <article class="article">
+    <div class="members-only-wrap">
+
+      <div id="locked">
+        <span class="members-only-badge">LINE会員限定コラム</span>
+        <h1 class="members-only-title">開発中の苦難<br>— TAKUBOX創業の舞台裏</h1>
+
+        <p class="members-only-lead">
+          コーポレートサイトでは語れない「なぜここまで来られたのか」。<br>
+          表に出せなかった3年間の経緯を、LINE会員限定で記録します。
+        </p>
+
+        <div class="pw-form">
+          <p class="pw-form-title">閲覧パスワード</p>
+          <p class="pw-form-note">本コラムはLINE会員限定です。LINE公式アカウントでお知らせしたパスワードをご入力ください。</p>
+          <input type="password" id="pw" class="pw-input" placeholder="パスワードを入力" autocomplete="off">
+          <button class="pw-submit" onclick="checkPw()">閲覧する</button>
+          <p class="pw-error" id="error"></p>
+        </div>
+      </div>
+
+      <div id="content" class="members-content">
+        <span class="members-only-badge">LINE会員限定コラム</span>
+        <h1 class="members-only-title">開発中の苦難<br>— TAKUBOX創業の舞台裏</h1>
+
+        <div class="construction-box">
+          <div class="construction-icon">🚧</div>
+          <p class="construction-title">公開準備中</p>
+          <p class="construction-text">
+            本コラムは現在、最終調整中です。<br>
+            LINE会員の皆様には、公開でき次第ご案内いたします。<br>
+            少々お待ちください。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <footer class="blog-footer">
+    <div class="blog-footer-inner">
+      <div class="blog-footer-links">
+        <a href="../index.html">トップ</a>
+        <a href="../product.html">製品紹介</a>
+        <a href="../lp.html">先行予約</a>
+        <a href="index.html">コラム一覧</a>
+        <a href="../tokushoho.html">特定商取引法</a>
+        <a href="../app-privacy.html">プライバシーポリシー</a>
+      </div>
+      <p class="blog-footer-copy">&copy; 2026 TAKUBOX LLC. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function checkPw() {
+      var input = document.getElementById('pw').value;
+      var err = document.getElementById('error');
+      if (input === 'Kp7qR9XmZ3vT') {
+        document.getElementById('locked').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        err.textContent = '';
+        if (typeof gtag === 'function') {
+          gtag('event', 'members_unlock', { 'event_category': 'members_only', 'event_label': 'development-struggles' });
+        }
+      } else {
+        err.textContent = 'パスワードが違います';
+        if (typeof gtag === 'function') {
+          gtag('event', 'members_unlock_fail', { 'event_category': 'members_only', 'event_label': 'development-struggles' });
+        }
+      }
+    }
+    document.getElementById('pw').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') { checkPw(); }
+    });
+  </script>
+
+</body>
+</html>
