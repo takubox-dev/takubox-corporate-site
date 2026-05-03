@@ -98,7 +98,7 @@
   <header class="header" id="top">
     <div class="header-inner">
       <a href="#top" class="logo">
-        <img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="logo-img">
+        <picture><source srcset="images/webp/logo.webp" type="image/webp"><img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="logo-img"></picture>
       </a>
       <nav class="nav" id="nav">
         <a href="#product">Product</a>
@@ -123,8 +123,8 @@
           <img src="images/hero.png" width="1376" height="768" alt="TAKUBOX" class="hero-img" fetchpriority="high" decoding="async">
         </picture>
         <div class="hero-handwrite">
-          <p class="handwrite-line handwrite-line--sub" data-handwrite>スマホ管理と勉強を「託す」ボックス</p>
-          <p class="handwrite-line handwrite-line--main" data-handwrite>タクボックス</p>
+          <p class="handwrite-line handwrite-line--sub" data-handwrite style="min-height:1.5em">スマホ管理と勉強を「託す」ボックス</p>
+          <p class="handwrite-line handwrite-line--main" data-handwrite style="min-height:1.5em">タクボックス</p>
         </div>
       </div>
       <div class="hero-caption">
@@ -443,7 +443,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="footer-logo-img">
+        <picture><source srcset="images/webp/logo.webp" type="image/webp"><img src="images/logo.png" width="1772" height="709" alt="TAKUBOX" class="footer-logo-img"></picture>
         <p>&copy; 2026 TAKUBOX LLC. All Rights Reserved.</p>
       </div>
     </div>
@@ -455,6 +455,9 @@
   </div>
 
   <script src="script.js" defer></script>
-  <script src="chatbot.js" defer></script>
+  
+<script>
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.src='chatbot.js';document.body.appendChild(s);},800);});
+</script>
 </body>
 </html>
