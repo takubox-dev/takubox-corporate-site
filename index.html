@@ -103,7 +103,10 @@
   <section class="hero">
     <a href="product.html" class="hero-link">
       <div class="hero-bg">
-        <img src="images/hero.png" alt="TAKUBOX" class="hero-img">
+        <picture>
+          <source srcset="images/webp/hero.webp" type="image/webp">
+          <img src="images/hero.png" alt="TAKUBOX" class="hero-img" fetchpriority="high" decoding="async">
+        </picture>
         <div class="hero-handwrite">
           <p class="handwrite-line handwrite-line--sub" data-handwrite>スマホ管理と勉強を「託す」ボックス</p>
           <p class="handwrite-line handwrite-line--main" data-handwrite>タクボックス</p>
@@ -152,7 +155,10 @@
           <a href="product.html" class="product-link">詳しく見る &rarr;</a>
         </div>
         <div class="product-image">
-          <img src="images/product-sunset.png" alt="TAKUBOX">
+          <picture>
+            <source srcset="images/webp/product-sunset.webp" type="image/webp">
+            <img src="images/product-sunset.png" alt="TAKUBOX" loading="lazy" decoding="async">
+          </picture>
         </div>
       </div>
       <div class="product-features">
@@ -179,7 +185,10 @@
   <section id="about" class="section section-about">
     <div class="container">
       <div class="about-image">
-        <img src="images/about-family.png" alt="家族の対話">
+        <picture>
+          <source srcset="images/webp/about-family.webp" type="image/webp">
+          <img src="images/about-family.png" alt="家族の対話" loading="lazy" decoding="async">
+        </picture>
       </div>
       <div class="about-block">
         <h2 class="about-vision">親が「悪者」に<br>ならなくていい。</h2>
